@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACO Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <video id="background-video" autoplay loop muted>
+        <source src="video/background.mp4" type="video/mp4">
+    </video>
+    
+    <div class="overlay"></div>
+    <div class="container">
+        
+        <div class="social-media">
+            <h3>SOCIAL MEDIA</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-discord"></i>
+                    <span>DISCORD</span>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                    <span>INSTAGRAM</span>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                    <span>YOUTUBE</span>
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="server-logo">
+            <div class="logo-container">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="server-name">
+                <h1>PACO</h1>
+                <h2>Roleplay</h2>
+            </div>
+        </div>
+
+        
+        <div class="server-info">
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="info-text">
+                    <h3>PACO</h3>
+                    <p>Developer</p>
+                    <p>"PACO Development"</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="info-text">
+                    <h3>PACO</h3>
+                    <p>Developer</p>
+                    <p>"PACO Development"</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="info-text">
+                    <h3>PACO</h3>
+                    <p>Developer</p>
+                    <p>"PACO Development"</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="info-text">
+                    <h3>PACO</h3>
+                    <p>Developer</p>
+                    <p>"PACO Development"</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="server-updates">
+            <div class="update-item">
+                <div class="update-header">
+                    <h3><i class="fas fa-sync-alt"></i> Server Update</h3>
+                    <span class="update-date">16.03.25</span>
+                </div>
+                <p>PACO Development</p>
+                <div class="update-footer">
+                    <button class="update-button">
+                        <i class="fas fa-download"></i> UPDATE
+                    </button>
+                    <span class="update-version">03/16/2025</span>
+                </div>
+            </div>
+            <div class="update-item">
+                <div class="update-header">
+                    <h3><i class="fas fa-sync-alt"></i> Server Update</h3>
+                    <span class="update-date">20.03.25</span>
+                </div>
+                <p>PACO Development</p>
+                <div class="update-footer">
+                    <button class="update-button">
+                        <i class="fas fa-download"></i> UPDATE
+                    </button>
+                    <span class="update-version">03/20/2025</span>
+                </div>
+            </div>
+            <div class="update-item">
+                <div class="update-header">
+                    <h3><i class="fas fa-sync-alt"></i> Server Update</h3>
+                    <span class="update-date">23.03.25</span>
+                </div>
+                <p>PACO Development</p>
+                <div class="update-footer">
+                    <button class="update-button">
+                        <i class="fas fa-download"></i> UPDATE
+                    </button>
+                    <span class="update-version">03/23/2025</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="music-player">
+            <div class="player-image">
+                <i class="fas fa-music"></i>
+            </div>
+            <div class="player-info">
+                <div class="player-header">
+                    <h3>PACO RP LOAD MUSIC</h3>
+                    <p>PACO</p>
+                </div>
+                <div class="player-controls">
+                    <button id="play-btn"><i class="fas fa-play"></i></button>
+                    <div class="volume-control">
+                        <i class="fas fa-volume-up" id="volume-icon"></i>
+                        <input type="range" id="volume-slider" min="0" max="100" value="50">
+                        <span id="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="loading-container">
+            <div class="loading-text">
+                <span id="status-text">Sunucuya bağlanılıyor...</span>
+                <span id="loading-percentage">(0%)</span>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <div class="loading-logo">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+        </div>
+
+        
+        <div class="footer">
+            <div class="footer-text">PACO Development</div>
+            <div class="footer-info">Yükleniyor... Made by ModradiaaS</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
